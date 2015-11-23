@@ -32,7 +32,7 @@ package Semana10;
  * 3er Semestre ITIC
  */
 public class list {
-    public Node inicio;
+        public Node inicio;
     public Node fin;
     public int size;//Se declaran las 3 variables que se utilizaran en la fila
     

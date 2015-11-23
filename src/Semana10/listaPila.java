@@ -11,7 +11,7 @@ package Semana10;
  */
 public class listaPila {
     
-    public nodoPila top;
+    public Dnode top;
     public String n;
     public String c;
     public int size;
@@ -25,7 +25,7 @@ public class listaPila {
     }
     
     public void Push(String n, String c){
-        nodoPila nuevo = new nodoPila(n,c);
+        Dnode nuevo = new Dnode(n,c);
         if(estaVacia()) top = nuevo;
         else{
             nuevo.siguiente = top;
@@ -63,7 +63,7 @@ public class listaPila {
         System.out.println("La pila se ha vaciado");
     }
     
-    public nodoPila cimaPila(){
+    public Dnode cimaPila(){
         return top;
     }
     
